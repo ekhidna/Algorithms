@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Algorithms.JsonFile {
     public class JsonCreateFile {
         public static void WriteJsonToFile(string inputFile = "JsonReadFile.txt" , string outputFile = "JsonWriteFile.json") {
-            var path = @"D:\Projetos\EQS\Algorithms\Algorithms\JsonFile\";
+            var path = @"D:\Projects\Algorithms\Algorithms\JsonFile\"; //Your Path here.
             var lines = File.ReadAllLines(path + inputFile);
             List<JsonClass>? jsonList = new();
             var provider = CultureInfo.CreateSpecificCulture("en-US");
